@@ -1,0 +1,33 @@
+{
+    "name": "jonnathas/laravel-acl-api",
+    "description": "Uma API com alguns recursos m\u0000gicos para acelerar qualquer projeto.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "jonnathas luiz costa dos santos",
+            "email": "jonnathas_jl@hotmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^7.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.2"
+    },
+    "autoload":{
+        "psr-4": {
+            "Jonnathas\\Acl\\" : "src/"
+        },
+        "classmap": [
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jonnathas\\Acl\\ServiceProviders\\ServiceProvider"
+            ]
+        }
+    }
+}
