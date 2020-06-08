@@ -26,7 +26,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Jonnathas\\Acl\\ServiceProviders\\ServiceProvider"
+                "Jonnathas\\Acl\\Providers\\ServiceProvider"
             ]
         }
     }
