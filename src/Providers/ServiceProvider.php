@@ -12,9 +12,12 @@ class ServiceProvider extends LaravelServiceProvider
     protected $providers =
         [   
             'Jonnathas\Acl\Providers\AuthorizationServiceProvider',
-            'Jonnathas\Acl\Providers\ServiceProvider',
             'Jonnathas\Acl\Providers\CommandsServiceProvider',
         ];
+
+    public function boot(){
+
+    }
 
     public function register(){
 
@@ -27,10 +30,6 @@ class ServiceProvider extends LaravelServiceProvider
         foreach($this->providers as $provider){
             $this->app->register($provider);
         }
-
-    }
-
-    public function boot(){
 
     }
 
