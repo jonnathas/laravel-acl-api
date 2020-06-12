@@ -1,7 +1,5 @@
 <?php
 
-namespace Jonnathas\Acl\Routes;
-
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -16,6 +14,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/acl-api',function(Request $Request){
-	dd($Request);
-});
+
+Route::get('/acl-api','Jonnathas\Acl\Http\Controllers\Controller@index');

@@ -6,16 +6,17 @@ trait MigrationsServiceProviderTrait
 {
     private function loadMigrations(){
         
-    	if(empty($this->migratePath)){
+    	if(empty($this->migrationsPath)){
     		return false;
     	}
+        
 
-        $migrationsPath = $this->packagePath($this->migratePath);
+        $this->migrationsPath = $this->packagePath($this->migrationsPath);
 
-        $this->loadMigrationsFrom($migrationsPath, $this->app_name);
+        $this->loadMigrationsFrom($this->migrationsPath, $this->app_name);
 
         $this->publishes([
-            $migrationsPath => base_path('database/migrations'),
+            $this->migrationsPath => base_path('database/migrations'),
         ], "$this->app_name-migrations");
     }
 }

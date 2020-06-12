@@ -29,11 +29,13 @@ class ServiceProvider extends LaravelServiceProvider
         HelpersServiceProviderTrait;
         
 
-    protected $routesPath = 'routes';
-    protected $app_name = 'laravel-acl-api';
-    protected $configPath = 'config';
+    private $routesPath = 'routes';
+    private $app_name = 'laravel-acl-api';
+    private $configPath = 'config';
+    private $controllersPath = 'Http/Controllers';
+    private $migrationsPath = 'database/migrations';
 
-    protected $providers =
+    private $providers =
         [   
             'Jonnathas\Acl\Providers\AuthorizationServiceProvider',
             'Jonnathas\Acl\Providers\CommandsServiceProvider'
@@ -75,7 +77,5 @@ class ServiceProvider extends LaravelServiceProvider
     
         return __DIR__."/../$path";
     
-    }
-
-    
+    }    
 }
