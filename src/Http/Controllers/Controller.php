@@ -15,8 +15,9 @@ class Controller extends BaseController
 
     public function index(){
 		
+        dd('TESTE');
 
-		return print("teste");
+		return print("olá mundo!!");
     	
     	//$role = Role::create(
     	//	['name' => 'name_role', 

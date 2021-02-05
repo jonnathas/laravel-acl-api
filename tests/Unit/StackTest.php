@@ -1,15 +1,21 @@
 <?php
-use PHPUnit\Framework\TestCase;
-use Jonnathas\Acl\Providers\ServiceProvider;
+//use PHPUnit\Framework\TestCase;
+use Orchestra\Testbench\TestCase;
 
+use Jonnathas\Acl\Providers\ServiceProvider;
 
 class StackTest extends TestCase
 {
+    /**
+    *
+    *	A basic test example.
+   	*@return void
+	*
+	*@covers
+    */
     public function testCreate(){
 
-        $appMock = $this->createMock('\Illuminate\Contracts\Foundation\Application');
-        $provider = new Jonnathas\Acl\Providers\ServiceProvider($appMock);
-
-        $this->assertClassHasAttribute('providers',Jonnathas\Acl\Providers\ServiceProvider::Class);
+    	
+        
     }
 }

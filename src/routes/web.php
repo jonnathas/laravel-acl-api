@@ -15,4 +15,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 
+
 Route::get('/acl-api','Jonnathas\Acl\Http\Controllers\Controller@index');

@@ -43,7 +43,7 @@ class ServiceProvider extends LaravelServiceProvider
         ];
 
     public function boot(){
-
+        echo "TESTADO";
     }
 
     public function register(){
