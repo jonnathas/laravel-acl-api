@@ -34,7 +34,7 @@ class ServiceProvider extends LaravelServiceProvider
     private $configPath = 'config';
     private $controllersPath = 'Http/Controllers';
     private $migrationsPath = 'database/migrations';
-
+    private $viewPath = 'resources/views';
     private $providers =
         [   
             'Jonnathas\Acl\Providers\AuthorizationServiceProvider',
@@ -43,7 +43,7 @@ class ServiceProvider extends LaravelServiceProvider
         ];
 
     public function boot(){
-        echo "TESTADO";
+        
     }
 
     public function register(){
@@ -63,6 +63,8 @@ class ServiceProvider extends LaravelServiceProvider
         $this->publishAssets();
 
         $this->publishControllers();
+
+        $this->loadViews();
     }
 
     public function providersRegister(){

@@ -9,9 +9,7 @@ trait ViewsServiceProviderTrait
     	if(empty($this->viewPath)){
     		return false;
     	}
-
-        Paginator::defaultView("$this->app_name".'::layouts.pagination.bootstrap-4');
-
+        
         $this->loadViewsFrom(
             $this->packagePath($this->viewPath),
             $this->app_name);

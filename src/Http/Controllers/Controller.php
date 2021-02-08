@@ -14,11 +14,12 @@ class Controller extends BaseController
    // use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
     public function index(){
-		
-        dd('TESTE');
 
-		return print("olá mundo!!");
+		// return print("olá mundo!!");
+
+		return view('laravel-acl-api::ola');
     	
+
     	//$role = Role::create(
     	//	['name' => 'name_role', 
     	//	'description' => 'description']);
