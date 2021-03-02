@@ -1,2 +1,2 @@
 # laravel-acl-api
-Uma api para estudos.
+Uma pacote somente para estudos.
